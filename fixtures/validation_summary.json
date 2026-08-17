@@ -1,0 +1,41 @@
+{
+  "measurement": "demo measurement",
+  "dataset": "3 fictional CV fixtures",
+  "correct_fields": 24,
+  "total_fields": 24,
+  "field_accuracy_percent": 100.0,
+  "average_processing_ms": 9,
+  "per_fixture": {
+    "complex_two_column": {
+      "contact.name": true,
+      "contact.email": true,
+      "contact.phone": true,
+      "location": true,
+      "education": true,
+      "work_experience": true,
+      "skills": true,
+      "languages": true
+    },
+    "mixed_fr_en_ambiguous": {
+      "contact.name": true,
+      "contact.email": true,
+      "contact.phone": true,
+      "location": true,
+      "education": true,
+      "work_experience": true,
+      "skills": true,
+      "languages": true
+    },
+    "normal_single_column": {
+      "contact.name": true,
+      "contact.email": true,
+      "contact.phone": true,
+      "location": true,
+      "education": true,
+      "work_experience": true,
+      "skills": true,
+      "languages": true
+    }
+  },
+  "disclaimer": "Not Bassetti internal data; small deterministic demo set, not a production benchmark."
+}

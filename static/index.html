@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bassetti CV Parser POC</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Bassetti interview POC home">
+      <span class="brand-mark">B</span><span>Bassetti <i>interview POC</i></span>
+    </a>
+    <div class="unofficial">UNOFFICIAL DEMO · LOCAL ONLY</div>
+  </header>
+  <main>
+    <section id="intake" class="intake">
+      <div class="intro">
+        <p class="eyebrow">CV TRANSCRIPTION WORKBENCH</p>
+        <h1>Evidence first.<br><span>Judgment stays human.</span></h1>
+        <p class="lede">Turn explicit CV content into a reviewable company profile. No scoring, ranking, job matching or automatic rejection.</p>
+      </div>
+      <div class="source-panel">
+        <div class="panel-number">01 / SOURCE DOCUMENT</div>
+        <label class="file-drop" for="fileInput">
+          <input id="fileInput" type="file" accept=".pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+          <span class="drop-icon">↗</span>
+          <strong>Choose PDF or DOCX</strong>
+          <small>Readable text · up to 10 MB · processed locally</small>
+        </label>
+        <div class="or"><span>OR USE A FICTIONAL SAMPLE</span></div>
+        <div id="samples" class="sample-list"></div>
+        <button id="parseFile" class="primary" disabled>Extract for review <span>→</span></button>
+        <p id="intakeError" class="error" role="alert"></p>
+      </div>
+    </section>
+
+    <section id="workspace" class="workspace hidden">
+      <aside class="source-rail">
+        <button id="newSession" class="back">← Start again</button>
+        <p class="eyebrow">SOURCE</p>
+        <h2 id="sourceName">—</h2>
+        <dl class="source-meta">
+          <div><dt>Pages</dt><dd id="pageCount">—</dd></div>
+          <div><dt>Processing</dt><dd id="processing">—</dd></div>
+          <div><dt>Session</dt><dd id="sessionId">—</dd></div>
+        </dl>
+        <div id="warnings" class="warnings"></div>
+        <div class="boundary">
+          <strong>Decision boundary</strong>
+          <p>This tool transcribes evidence. The recruiter owns interpretation and every downstream decision.</p>
+        </div>
+      </aside>
+      <div class="review-area">
+        <div class="review-head">
+          <div><p class="eyebrow">02 / HUMAN REVIEW</p><h2>Confirm what the source actually says.</h2></div>
+          <div class="progress"><strong id="confirmedCount">0 / 8</strong><span>required fields confirmed</span></div>
+        </div>
+        <div id="fieldList" class="field-list"></div>
+
+        <section class="metrics-section">
+          <div><p class="eyebrow">DEMO MEASUREMENT</p><h2>Validation snapshot</h2><p>Measured on the three bundled fictional fixtures — never Bassetti internal data.</p></div>
+          <div id="metrics" class="metrics"></div>
+        </section>
+
+        <section class="export-bar">
+          <div><p class="eyebrow">03 / CONTROLLED EXPORT</p><h2 id="exportTitle">Review required</h2><p id="exportHelp">Confirm every required field — including an explicit “Not found” — to unlock export.</p></div>
+          <div class="export-actions">
+            <button id="resetReview" class="secondary">Return to review</button>
+            <a id="exportJson" class="button disabled" aria-disabled="true">Export JSON</a>
+            <a id="exportDocx" class="button primary disabled" aria-disabled="true">Export DOCX <span>↓</span></a>
+          </div>
+        </section>
+
+        <details class="audit-panel"><summary>Audit record <span id="auditCount">0 events</span></summary><div id="auditList"></div></details>
+      </div>
+    </section>
+  </main>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
+

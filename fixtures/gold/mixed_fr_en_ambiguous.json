@@ -1,0 +1,26 @@
+{
+  "contact.name": "Camille Moreau",
+  "contact.email": "camille.moreau@example.test",
+  "contact.phone": null,
+  "location": "Toulouse, France",
+  "education_count": 1,
+  "work_experience_count": 3,
+  "skills_count": 4,
+  "languages": [
+    {
+      "language": "Français",
+      "original_level": "Langue maternelle",
+      "cefr": "Not specified"
+    },
+    {
+      "language": "English",
+      "original_level": "Fluent",
+      "cefr": "Not specified"
+    },
+    {
+      "language": "Español",
+      "original_level": "Niveau professionnel",
+      "cefr": "Not specified"
+    }
+  ]
+}

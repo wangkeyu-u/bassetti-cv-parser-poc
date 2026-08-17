@@ -1,0 +1,21 @@
+{
+  "contact.name": "Oliver Chen",
+  "contact.email": "oliver.chen@example.test",
+  "contact.phone": "+44 7700 900 412",
+  "location": "Bristol, UK",
+  "education_count": 1,
+  "work_experience_count": 2,
+  "skills_count": 5,
+  "languages": [
+    {
+      "language": "English",
+      "original_level": "Native",
+      "cefr": "Not specified"
+    },
+    {
+      "language": "Mandarin",
+      "original_level": "Conversational",
+      "cefr": "Not specified"
+    }
+  ]
+}

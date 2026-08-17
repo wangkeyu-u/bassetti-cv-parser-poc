@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+data/sessions/*.json
+data/uploads/*
+output/*
+tmp/
+!data/sessions/.gitkeep
+!data/uploads/.gitkeep
+!output/.gitkeep

@@ -1,0 +1,26 @@
+{
+  "contact.name": "Maya Laurent",
+  "contact.email": "maya.laurent@example.test",
+  "contact.phone": "+33 6 00 00 01 27",
+  "location": "Lyon, France",
+  "education_count": 2,
+  "work_experience_count": 2,
+  "skills_count": 5,
+  "languages": [
+    {
+      "language": "French",
+      "original_level": "Native",
+      "cefr": "Not specified"
+    },
+    {
+      "language": "English",
+      "original_level": "Fluent",
+      "cefr": "Not specified"
+    },
+    {
+      "language": "German",
+      "original_level": "B1",
+      "cefr": "B1"
+    }
+  ]
+}
