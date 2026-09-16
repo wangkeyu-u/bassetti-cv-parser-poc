@@ -96,7 +96,7 @@ def export_docx(session: dict) -> bytes:
 
     header = section.header.paragraphs[0]
     header.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-    font(header.add_run("BASSETTI INTERVIEW POC  /  UNOFFICIAL DEMO"), 8, True, MUTED)
+    font(header.add_run("BASSETTI CV TRANSCRIPTION  /  UNOFFICIAL DEMO"), 8, True, MUTED)
 
     p = doc.add_paragraph(); p.paragraph_format.space_after = Pt(2)
     font(p.add_run("CANDIDATE PROFILE"), 23, True, INK)

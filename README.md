@@ -1,8 +1,8 @@
 # Bassetti CV Parser POC
 
-> Bassetti interview POC / unofficial demo. A local, human-in-the-loop CV transcription workbench — not an official Bassetti product or template.
+> Bassetti CV transcription POC / unofficial demo. A local, human-in-the-loop CV transcription workbench — not an official Bassetti product or template.
 
-This repository is a runnable interview demonstration. It extracts **only information explicitly present** in a CV into a fixed schema, displays source evidence and uncertainty, records recruiter corrections, and unlocks JSON/DOCX export only after every required field has been confirmed.
+This repository is a local document transcription prototype. It extracts **only information explicitly present** in a CV into a fixed schema, displays source evidence and uncertainty, records recruiter corrections, and unlocks JSON/DOCX export only after every required field has been confirmed.
 
 It does **not** score, rank, match, recommend, reject, or otherwise make employment decisions.
 
@@ -52,15 +52,6 @@ Latest verified result:
 - DOCX export rendered to PNG through LibreOffice and visually checked with no clipping or overlap.
 
 The validation report is saved at [`fixtures/validation_summary.json`](fixtures/validation_summary.json). Gold fixtures are under [`fixtures/gold/`](fixtures/gold/).
-
-## 3–5 minute interview demo
-
-1. **Set the boundary (20 seconds).** On the opening screen, point out “Evidence first. Judgment stays human” and the explicit no-scoring/no-ranking statement.
-2. **Happy path (45 seconds).** Choose `normal_single_column`. Extract it. Show structured values, PDF page evidence, confidence, and the fact that `English: Fluent` remains `Fluent` while CEFR is `Not specified`.
-3. **Human control (60 seconds).** Edit one field, click **Save edit**, then **Confirm**. Flag another for follow-up. Open **Audit record** to show timestamp, field, old/new value, status, and action.
-4. **Exceptions (45 seconds).** Start again with `mixed_fr_en_ambiguous`. Show phone as **Not found**, the day/month ambiguity, overlapping dates, the sensitive-information warning, mixed French/English values, and no inferred CEFR.
-5. **Approval gate and export (45 seconds).** Confirm all eight schema groups (confirming “Not found” is an explicit human assertion). Export JSON and DOCX. Open the DOCX to show the standardized, unofficial company profile.
-6. **Safe fallback + measurement (30 seconds).** Click **Return to review** to lock exports again without deleting values/audit history. Show the **demo measurement** area and its tiny-dataset disclaimer.
 
 ## Supported workflow
 
