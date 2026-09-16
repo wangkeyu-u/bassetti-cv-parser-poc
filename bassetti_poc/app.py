@@ -1,4 +1,4 @@
-"""Dependency-light local HTTP application for the interview POC."""
+"""Dependency-light local HTTP application for the CV transcription POC."""
 
 from __future__ import annotations
 
